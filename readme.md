@@ -2,7 +2,7 @@
 This is an application for collecting oral histories. An interviewer is asked to create an account for each interview they will upload, giving this account an interviewee name (in the code this is called the username), an email address and a password. An account is then created with a unique avatar. The interviewer, interviewee and anyone else who has the password is then able to log in and add the transcription of an interview, which the app stores in a database. The transcript is retrievable from the find interview page (coded as the login page) and the database is searchable from the command line. 
 
 ## Instructions
-The app is fairly easy to use for users inexperienced in html. Once an interview is translated into text, a user logged into their account can paste the text and have it stored into a database within their account.
+The app is fairly easy to use. Once an interview has been transcribed, an interviewer can create or log in to an interview account and paste the text of the transcript in order to have it stored in the database of the oral history app.
 
 This page will show you how to
  -
