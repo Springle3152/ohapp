@@ -1,5 +1,5 @@
 # Oral History App
-This is an application for oral histories. A user is asked to create a username and password and then an account is created with a unique avatar. The user is then able to log in and add text from an interview and have it store in a database. The database is then retrievable. 
+This is an application for collecting oral histories. An interviewer is asked to create an account for each interview they will upload, giving this account an interviewee name (in the code this is called the username), an email address and a password. An account is then created with a unique avatar. The interviewer, interviewee and anyone else who has the password is then able to log in and add the transcription of an interview, which the app stores in a database. The transcript is retrievable from the find interview page (coded as the login page) and the database is searchable from the command line. 
 
 ## Instructions
 The app is fairly easy to use for users inexperienced in html. Once an interview is translated into text, a user logged into their account can paste the text and have it stored into a database within their account.
@@ -45,8 +45,13 @@ cd C:\Users\Username\ohapp
 virtualenv venv
 ```
 * Activate the virtual environment (it will say venv infront of the directory location on the command prompt, that is how you know you are in the virtual environment)
+* If you are using Windows, type:
 ```
-venv\Scripts\activate
+$ source venv\Scripts\activate
+```
+* On a Mac, type:
+```
+$ source venv\bin\activate
 ```
 * Run the ohapp app:
 ```
