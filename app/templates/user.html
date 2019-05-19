@@ -8,8 +8,13 @@
                 <h1>Interview of {{ user.username }}</h1>
                 {% if user.about_me %}<p>{{ user.about_me }}</p>{% endif %}
                 {% if user.last_seen %}<p>Last seen on: {{ user.last_seen }}</p>{% endif %}
+                <p>{{ user.followers.count() }} contributors, {{ user.followed.count() }} contributing.</p>
                 {% if user == current_user %}
                 <p><a href="{{ url_for('edit_profile') }}">Edit profile</a></p>
+                {% elif not current_user.is_following(user) %}
+                <p><a href="{{ url_for('follow', username=user.username) }}">Contribute</a></p>
+                {% else %}
+                <p><a href="{{ url_for('unfollow', username=user.username) }}">Stop contributing</a></p>
                 {% endif %}
             </td>
         </tr>

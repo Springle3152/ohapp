@@ -1,9 +1,8 @@
 from flask_wtf import FlaskForm
-from wtforms import (
-    BooleanField, PasswordField, StringField, SubmitField, TextAreaField)
-from wtforms.validators import (
-    DataRequired, Email, EqualTo, Length, ValidationError)
-
+from wtforms import StringField, PasswordField, BooleanField, SubmitField, \
+    TextAreaField
+from wtforms.validators import ValidationError, DataRequired, Email, EqualTo, \
+    Length
 from app.models import User
 
 class LoginForm(FlaskForm):
@@ -44,3 +43,8 @@ class EditProfileForm(FlaskForm):
             user = User.query.filter_by(username=self.username.data).first()
             if user is not None:
                 raise ValidationError('Please enter a different interviewee name.')
+
+class PostForm(FlaskForm):
+    post = TextAreaField('Contribute or comment', validators=[
+        DataRequired(), Length(min=1, max=640)])
+    submit = SubmitField('Submit')

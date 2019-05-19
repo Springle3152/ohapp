@@ -49,7 +49,7 @@ $ cd C:\Users\Username\ohapp
 On a Mac: 
 ```
 $ cd Users\Username\ohapp
-
+```
 * Create and load virtual environment in a subdirectory, for example we created one called "venv"
 ```
 $ virtualenv venv
@@ -82,6 +82,21 @@ From the Ohapp form:
 - click
 - click 
 - click 
+
+To query the database, go into the ohapp directory in the command line, run Python, and type the following commands:
+```
+>>> from app import db
+>>> from app.models import User, Post
+
+>>> users = User.query.all()
+>>> users
+[<User Irma Ostroff>, <User Sal Kove>]
+>>> for u in users:
+...     print(u.id, u.username)
+...
+1 Irma Ostroff
+2 Sal Kove
+```
 
 Error handling:
 

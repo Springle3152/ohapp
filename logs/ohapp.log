@@ -1,3 +1,25 @@
-2019-05-18 21:48:04,810 INFO: Ohapp startup [in /Users/sabinapringle/Desktop/projects/ohapp/app/__init__.py:51]
-2019-05-18 21:59:28,385 INFO: Ohapp startup [in /Users/sabinapringle/Desktop/projects/ohapp/app/__init__.py:51]
-2019-05-18 23:07:02,490 INFO: Ohapp startup [in /Users/sabinapringle/Desktop/projects/ohapp/app/__init__.py:51]
+2019-05-19 14:47:43,110 ERROR: Exception on /index [GET] [in /Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/sabinapringle/Desktop/projects/ohapp/app/routes.py", line 28, in index
+    page, app.config['POSTS_PER_PAGE'], False)
+KeyError: 'POSTS_PER_PAGE'
+2019-05-19 14:56:38,615 INFO: Ohapp startup [in /Users/sabinapringle/Desktop/projects/ohapp/app/__init__.py:51]
+2019-05-19 15:23:00,428 INFO: Ohapp startup [in /Users/sabinapringle/Desktop/projects/ohapp/app/__init__.py:51]
+2019-05-19 15:45:59,983 INFO: Ohapp startup [in /Users/sabinapringle/Desktop/projects/ohapp/app/__init__.py:51]
+2019-05-19 16:06:17,864 INFO: Ohapp startup [in /Users/sabinapringle/Desktop/projects/ohapp/app/__init__.py:51]
+2019-05-19 16:06:47,509 INFO: Ohapp startup [in /Users/sabinapringle/Desktop/projects/ohapp/app/__init__.py:51]
+2019-05-19 16:06:58,581 INFO: Ohapp startup [in /Users/sabinapringle/Desktop/projects/ohapp/app/__init__.py:51]
