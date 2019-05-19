@@ -72,8 +72,8 @@ def register():
 def user(username):
     user = User.query.filter_by(username=username).first_or_404()
     posts = [
-        {'author': user, 'body': 'Test Post #1'},
-        {'author': user, 'body': 'Test Post #2'}
+        {'author': user, 'body': 'It is nice to be here today, thank you for the coffee (sound of coffee being poured)'},
+        {'author': user, 'body': 'So you want to know about how I got where I am? Well, it is a long story.'}
     ]
 
     return render_template('user.html', user=user, posts=posts)
@@ -82,7 +82,7 @@ def user(username):
 @app.route('/edit_profile', methods=['GET', 'POST'])
 @login_required
 def edit_profile():
-    form = EditProfileForm()
+    form = EditProfileForm(current_user.username)
     if form.validate_on_submit():
         current_user.username = form.username.data
         current_user.about_me = form.about_me.data
