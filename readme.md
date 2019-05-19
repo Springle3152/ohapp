@@ -9,6 +9,7 @@ This page will show you how to
  - Install the oral history app on your local server
  - Add a new interview account to the database and create an interviewee profile with a brief abstract of the interview
  - Retrieve interview accounts on the web app
+ - Add the transcript of an interview to the interviewee account
  - Consult the app database to get a list of all interviewees, abstracts and transcripts attributed to these 
  - Remove interview accounts from the database
  - Change the name of the app and descriptive text on the app home page so that you can make different versions of this app for different projects.
@@ -31,7 +32,7 @@ Install Python:
 
 ### Procedure
 
-* Open your command prompt and install virtualenv (a Python virtual enviroment package) using Python's pip tool:
+* Open your command prompt and install virtualenv (a Python virtual enviroment package) using Python's Pip tool:
 ```
 $ pip install virtualenv
 ```
@@ -39,10 +40,16 @@ $ pip install virtualenv
 ```
 git clone https://github.com/ . . . . 
 ```
-* change into the cloned directory, Ex. C:\Users\Username\ophapp:
+* change into the cloned directory:
+
+In Windows:
 ```
 $ cd C:\Users\Username\ohapp
 ```
+On a Mac: 
+```
+$ cd Users\Username\ohapp
+
 * Create and load virtual environment in a subdirectory, for example we created one called "venv"
 ```
 $ virtualenv venv
