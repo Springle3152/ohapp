@@ -1,4 +1,4 @@
-2019-05-19 13:37:38,870 ERROR: Exception on /index [GET] [in /Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/flask/app.py:1761]
+2019-05-20 14:57:34,337 ERROR: Exception on / [GET] [in /Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/flask/app.py:1761]
 Traceback (most recent call last):
   File "/Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
@@ -14,10 +14,37 @@ Traceback (most recent call last):
     return self.view_functions[rule.endpoint](**req.view_args)
   File "/Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/flask_login/utils.py", line 261, in decorated_view
     return func(*args, **kwargs)
-  File "/Users/sabinapringle/Desktop/projects/ohapp/app/routes.py", line 28, in index
-    page, app.config['POSTS_PER_PAGE'], False)
-KeyError: 'POSTS_PER_PAGE'
-2019-05-19 13:37:43,096 ERROR: Exception on /index [GET] [in /Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/flask/app.py:1761]
+  File "/Users/sabinapringle/Desktop/projects/ohapp/app/routes.py", line 35, in index
+    prev_url=prev_url)
+  File "/Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/flask/templating.py", line 135, in render_template
+    context, ctx.app)
+  File "/Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/sabinapringle/Desktop/projects/ohapp/app/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/sabinapringle/Desktop/projects/ohapp/app/templates/base.html", line 17, in top-level template code
+    <a href="{{ url_for('logout') }}">New Search</a>
+  File "/Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/flask/helpers.py", line 356, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/flask/app.py", line 2061, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/flask/helpers.py", line 345, in url_for
+    force_external=external)
+  File "/Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/werkzeug/routing.py", line 2181, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'logout'. Did you mean 'follow' instead?
+2019-05-20 15:00:05,167 INFO: Ohapp startup [in /Users/sabinapringle/Desktop/projects/ohapp/app/__init__.py:51]
+2019-05-20 15:03:15,280 ERROR: Exception on /register [POST] [in /Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/flask/app.py:1761]
 Traceback (most recent call last):
   File "/Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
@@ -31,13 +58,22 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "/Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "/Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/flask_login/utils.py", line 261, in decorated_view
-    return func(*args, **kwargs)
-  File "/Users/sabinapringle/Desktop/projects/ohapp/app/routes.py", line 28, in index
-    page, app.config['POSTS_PER_PAGE'], False)
-KeyError: 'POSTS_PER_PAGE'
-2019-05-19 14:47:04,220 INFO: Ohapp startup [in /Users/sabinapringle/Desktop/projects/ohapp/app/__init__.py:51]
-2019-05-19 14:47:18,198 ERROR: Exception on / [GET] [in /Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/flask/app.py:1761]
+  File "/Users/sabinapringle/Desktop/projects/ohapp/app/routes.py", line 85, in register
+    return redirect(url_for('Login to interview'))
+  File "/Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/flask/helpers.py", line 356, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/flask/app.py", line 2061, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/flask/helpers.py", line 345, in url_for
+    force_external=external)
+  File "/Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/werkzeug/routing.py", line 2181, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'Login to interview'. Did you mean 'register' instead?
+2019-05-20 15:25:17,633 INFO: Ohapp startup [in /Users/sabinapringle/Desktop/projects/ohapp/app/__init__.py:51]
+2019-05-20 15:32:14,303 INFO: Ohapp startup [in /Users/sabinapringle/Desktop/projects/ohapp/app/__init__.py:51]
+2019-05-20 15:35:56,474 ERROR: Exception on /register [POST] [in /Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/flask/app.py:1761]
 Traceback (most recent call last):
   File "/Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
@@ -51,65 +87,17 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "/Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "/Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/flask_login/utils.py", line 261, in decorated_view
-    return func(*args, **kwargs)
-  File "/Users/sabinapringle/Desktop/projects/ohapp/app/routes.py", line 28, in index
-    page, app.config['POSTS_PER_PAGE'], False)
-KeyError: 'POSTS_PER_PAGE'
-2019-05-19 14:47:20,927 ERROR: Exception on / [GET] [in /Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/flask/app.py:1761]
-Traceback (most recent call last):
-  File "/Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+  File "/Users/sabinapringle/Desktop/projects/ohapp/app/routes.py", line 85, in register
+    return redirect(url_for('Login to interview'))
+  File "/Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/flask/helpers.py", line 356, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/flask/app.py", line 2061, in handle_url_build_error
     reraise(exc_type, exc_value, tb)
   File "/Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
     raise value
-  File "/Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/flask_login/utils.py", line 261, in decorated_view
-    return func(*args, **kwargs)
-  File "/Users/sabinapringle/Desktop/projects/ohapp/app/routes.py", line 28, in index
-    page, app.config['POSTS_PER_PAGE'], False)
-KeyError: 'POSTS_PER_PAGE'
-2019-05-19 14:47:22,941 ERROR: Exception on /index [GET] [in /Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/flask/app.py:1761]
-Traceback (most recent call last):
-  File "/Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
-    raise value
-  File "/Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/flask_login/utils.py", line 261, in decorated_view
-    return func(*args, **kwargs)
-  File "/Users/sabinapringle/Desktop/projects/ohapp/app/routes.py", line 28, in index
-    page, app.config['POSTS_PER_PAGE'], False)
-KeyError: 'POSTS_PER_PAGE'
-2019-05-19 14:47:24,027 ERROR: Exception on /user/Christofer Gass [GET] [in /Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/flask/app.py:1761]
-Traceback (most recent call last):
-  File "/Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
-    raise value
-  File "/Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/flask_login/utils.py", line 261, in decorated_view
-    return func(*args, **kwargs)
-  File "/Users/sabinapringle/Desktop/projects/ohapp/app/routes.py", line 94, in user
-    page, app.config['POSTS_PER_PAGE'], False)
-KeyError: 'POSTS_PER_PAGE'
+  File "/Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/flask/helpers.py", line 345, in url_for
+    force_external=external)
+  File "/Users/sabinapringle/Desktop/projects/ohapp/venv/lib/python3.7/site-packages/werkzeug/routing.py", line 2181, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'Login to interview'. Did you mean 'register' instead?
+2019-05-20 15:39:07,007 INFO: Ohapp startup [in /Users/sabinapringle/Desktop/projects/ohapp/app/__init__.py:51]

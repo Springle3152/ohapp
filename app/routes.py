@@ -82,7 +82,7 @@ def register():
         db.session.add(user)
         db.session.commit()
         flash('Congratulations, you have registered an interview!')
-        return redirect(url_for('Login to interview'))
+        return redirect(url_for('Login to register'))
     return render_template('register.html', title='Register', form=form)
 
 @app.route('/user/<username>')

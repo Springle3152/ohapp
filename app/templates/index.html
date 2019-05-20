@@ -1,8 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>Transcipt of the interview of {{ current_user.username }}</h1>
-    <h2>For addition to the NYCPH Oral History Project Database</h2>
+    <h2>To add the interview of {{ current_user.username }} to the NYCPH Oral History Project database, please paste or type the transcript of your interview in the box below.</h2>
     {% if form %}
     <form action="" method="post">
         {{ form.hidden_tag() }}
