@@ -18,7 +18,8 @@ This page will show you how to
 This app is coded with Python using the Flask framework. You will need to install Python and then, with Python, install Flask on your computer. You will also need to create a GitHub account so that you can download the app to your computer. 
 
 ## Installation
-### NOTE TO CHRISTOFER: can you please revise the installation instructions carefully? See my sms re. venv. If you want to take a stab at explaining how to add transcripts to the app go ahead, but I'm happy to do that as I know the thing inside out by now. :)
+
+### NOTE TO CHRISTOFER: can you please revise the installation instructions carefully? See my sms re. venv. 
 
 ## Prerequisites
 
@@ -117,5 +118,6 @@ To query the database, go into the ohapp directory in the command line, run Pyth
 
 Error handling:
 
-If an error occurs on the production version of the application, you will want to know right away. We have configured Flask to send us an email immediately after an error, with the stack trace of the error in the email body. As the app is configured, the email will go to one of the developers of this version of the oral history app. To change this email address, open config.py at the top level of the ohapp folder and change the email address in that module.
+If an error occurs on the production version of the application, you will want to know right away. We have configured Flask to send us an email immediately after an error, with the stack trace of the error in the email body. As the app is configured, the email will go to one of the developers of this version of the oral history app. To change this email address, open config.py at the top level of the ohapp folder and change the email address in that module. There is also an error log built into this app, located in Logs/ohapp.log
+
 
