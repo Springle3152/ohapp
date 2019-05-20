@@ -98,3 +98,5 @@ jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'endfor'. Jinja w
 2019-05-19 23:57:34,716 INFO: Ohapp startup [in /Users/sabinapringle/Desktop/projects/ohapp/app/__init__.py:51]
 2019-05-20 00:10:39,054 INFO: Ohapp startup [in /Users/sabinapringle/Desktop/projects/ohapp/app/__init__.py:51]
 2019-05-20 00:13:36,769 INFO: Ohapp startup [in /Users/sabinapringle/Desktop/projects/ohapp/app/__init__.py:51]
+2019-05-20 07:08:08,868 INFO: Ohapp startup [in /Users/sabinapringle/Desktop/projects/ohapp/app/__init__.py:51]
+2019-05-20 07:18:09,395 INFO: Ohapp startup [in /Users/sabinapringle/Desktop/projects/ohapp/app/__init__.py:51]
