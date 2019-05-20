@@ -31,7 +31,7 @@ class RegistrationForm(FlaskForm):
 
 class EditProfileForm(FlaskForm):
     username = StringField('Interviewee Name', validators=[DataRequired()])
-    about_me = TextAreaField('Abstract', validators=[Length(min=0, max=340)])
+    about_me = TextAreaField('Abstract', validators=[Length(min=0, max=3000)])
     submit = SubmitField('Submit')
 
     def __init__(self, original_username, *args, **kwargs):
@@ -45,6 +45,6 @@ class EditProfileForm(FlaskForm):
                 raise ValidationError('Please enter a different interviewee name.')
 
 class PostForm(FlaskForm):
-    post = TextAreaField('Contribute or comment', validators=[
+    post = TextAreaField('Paste or type interview transcript', validators=[
         DataRequired(), Length(min=1, max=10000)])
     submit = SubmitField('Submit')
