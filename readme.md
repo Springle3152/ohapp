@@ -142,11 +142,11 @@ We are not sure at present how to retrieve all the transcripts of one interviewe
 
 ## Error handling:
 
-If an error occurs on the production version of the application, you will want to know right away. We have configured Flask to send us an email immediately after an error, with the stack trace of the error in the email body. As the app is configured, the email will go to one of the developers of this version of the oral history app. To change this email address, open config.py at the top level of the ohapp folder and change the email address in that module. There is also an error log built into this app, located in Logs/ohapp.log
+If an error occurs on the production version of the application, you will want to know right away. We have configured Flask to send us an email immediately after an error, with the stack trace of the error in the email body. As the app is configured, the email will go to one of the developers of this version of Ohapp. To change this email address, open config.py and change the email address in that module. There is also an error log built into Ohapp, located in Logs/ohapp.log
 
 ## Use of this app
 
-If you want to modify this app and use it for another project, you can change most of the language that users will see on the front end in the .html files in app/templates/ and also in app/routes.py, app/models.py, and app.forms.py, as well as other modules. Just be careful what you change (only change words in quotation marks and not all of these can be changed) and keep track of what you change so that you can go back, as you will probably break the code a whole bunch of times. 
+If you want to modify this app and use it for another project, you can change most of the language that users will see on the front end in the HTML files in app/templates/ and also in app/routes.py, app/models.py, and app.forms.py, as well as other modules. Just be careful what you change (only change words in quotation marks and not all of these can be changed) and keep track of what you change so that you can go back, as you will probably break the code a whole bunch of times. 
 
 ## License
 
