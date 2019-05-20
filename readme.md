@@ -69,13 +69,12 @@ $ source venv\bin\activate
 (venv) $ python ohapp.py
 ```
 Running on http:127.0.0.1:5000
-```
-This means your enviroment is running and accessible through your local host. Leave your command prompt open and then go to this link in a web browser:
-```
-http://127.0.0.1:5000/
-```
-!!!Do not close the command prompt window, it is running from there!!!
 
+This means your enviroment is running and accessible through your local host. Leave your command prompt open and then go to this link in a web browser:
+
+http://127.0.0.1:5000/
+
+!!!Do not close the command prompt window, it is running from there!!!
 
 ### Adding Interviews
 
