@@ -19,7 +19,8 @@ This app is coded with Python using the Flask framework. You will need to instal
 
 ## Installation
 ### NOTE TO CHRISTOFER: can you please revise the installation instructions carefully? See my sms re. venv. If you want to take a stab at explaining how to add transcripts to the app go ahead, but I'm happy to do that as I know the thing inside out by now. :)
-### Prerequisites
+
+## Prerequisites
 
 Create a GitHub account:
 * git: https://git-scm.com/downloads
@@ -31,7 +32,7 @@ Install Python:
 >C:\> 
 >```
 
-### Procedure
+## Procedure
 
 * Open your command prompt and install virtualenv (a Python virtual enviroment package) using Python's Pip tool:
 ```
@@ -76,7 +77,7 @@ http://127.0.0.1:5000/
 
 !!!Do not close the command prompt window, it is running from there!!!
 
-### Adding Interviews
+# Adding Interviews
 
 To add the transcript of an interview to Ohapp, first click on "Add New Interview" at the bottom of the landing page. You will be redirected to the Add new interview form. 
 
@@ -96,7 +97,7 @@ Click on the Read option at the top of the page. You will be redirected to the i
 
 To retrieve other interviews you or someone else added to Ohapp, click on New Search. You will be redirected to the Add page. Click on Find at the top of the screen or stay in the Add page (the retrieve interview form is on both pages) and type in a different interviewee name and password. You will not be able to read interviews if you don't know the passwords associated with these. This is because we have not yet received Instituional Review Board approval to make interviews public. You can, however, get a list of interviews and email addresses from the database through the command line. You can also retrieve interview transcripts in the database through the command line.
 
-## Search the database
+# Search the database
 
 To query the database, go into the ohapp directory in the command line, run Python, and type the following commands:
 ```
