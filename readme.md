@@ -18,6 +18,7 @@ This page will show you how to
 This app is coded with Python using the Flask framework. You will need to install Python and then, with Python, install Flask on your computer. You will also need to create a GitHub account so that you can download the app to your computer. 
 
 ## Installation
+### NOTE TO CHRISTOFER: can you please revise the installation instructions carefully? See my sms re. venv. If you want to take a stab at explaining how to add transcripts to the app go ahead, but I'm happy to do that as I know the thing inside out by now. :)
 ### Prerequisites
 
 Create a GitHub account:
