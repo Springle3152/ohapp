@@ -76,13 +76,28 @@ http://127.0.0.1:5000/
 
 !!!Do not close the command prompt window, it is running from there!!!
 
-## Configure OAI Repository
 
-From the Ohapp form:
+## Adding Interviews
 
-- click
-- click 
-- click 
+To add the transcript of an interview to Ohapp, first click on "Add New Interview" at the bottom of the landing page. You will be redirected to the Add new interview form. 
+
+#Register the new interview
+
+In the Add new interview form, enter the name of the interviewee, the email of the interviewee and a password, and click on submit. You will be redirected back to the Add page. Type the name of interviewee and password that you just registered to access your new interview Add transcript page.
+
+#Add the transcript to the database
+
+Paste or type the transcript of your interview into the rather small box and click submit. You can paste up to 10,000 characters as many times as you like. The transcript will appear below the box as you add it. At the same time, it is being automatically saved in the app SQLite database.
+
+#Add an abstract
+
+Click on the Read option at the top of the page. You will be redirected to the interview home page where you will see a unique avatar that has been generated for your interviewee. To add an abstract, click on edit profile. You will be redirected to a web form where you can type up to 3000 characters summarizing the story of your interviewee. Click on submit. Don't be surprised if it seems like nothing happened; you will not be redirected (we are working on adding a redirect to this page) but your abstract will be added to your interview Read page. 
+
+#Search for other interviews
+
+To retrieve other interviews you or someone else added to Ohapp, click on New Search. You will be redirected to the Add page. Click on Find at the top of the screen or stay in the Add page (the retrieve interview form is on both pages) and type in a different interviewee name and password. You will not be able to read interviews if you don't know the passwords associated with these. This is because we have not yet received Instituional Review Board approval to make interviews public. You can, however, get a list of interviews and email addresses from the database through the command line. You can also retrieve interview transcripts in the database through the command line.
+
+#Search the database
 
 To query the database, go into the ohapp directory in the command line, run Python, and type the following commands:
 ```
