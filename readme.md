@@ -100,7 +100,7 @@ To retrieve other interviews you or someone else added to Ohapp, click on New Se
 
 # Search the database
 
-To query the database, go into the ohapp directory in the command line, run Python, and type the following commands:
+To query the database, go into the ohapp directory in the command line, run Python, and type the following commands to see the list of all interviewees (note that in the database the interviewees are called users):
 ```
 >>> from app import db
 >>> from app.models import User, Post
@@ -113,11 +113,56 @@ To query the database, go into the ohapp directory in the command line, run Pyth
 ...
 1 Irma Ostroff
 2 Sal Kove
-
 ```
+Note that indents are important in the command line. In the above query the p in print has to be right below the u in user or the program won't do what you want. 
 
-Error handling:
+If you want to include the interviewees email addresses in the list, type the query as so:
+```
+>>> for u in users:
+...     print(u.id, u.username, u.email)
+... 
+1 Irma Ostroff ostroff147@gmail.com
+2 Sal Kove salkove@salkove.com
+```
+If you want to see information on only one interviewee, use that interviewee's user id as returned by the User.query.all command, to write a query like this:  
+```
+>>> u = User.query.get(2)
+>>> u
+<User Sal Kove>
+```
+If you want to retrieve interview transcripts from the Ohapp database through the command line, this is how you can retrieve all transcripts (note that in the database transcripts are called posts):
+```
+>>> from app import db
+>>> from app.models import User, Post
+>>> p = Post.query.all()
+>>> p
+[<Post I was born in Lithuania in 1952.>, <Post Thank you for the coffee (sound of coffee being poured). >, <Post Yes, I am comfortable, thank you. Unless you want to sit here? OK, I will stay here then. So. You say you want to know how I got where I am. Well, it is a long story. I will start at the beginning. I was born in Mott Haven in the Bronx on May first, 1948. My father was from West Virginia, and my mother was from Pennsylvania. We were poor but we got by until my father cut his foot at work (he was a builder) and the cut got infected, and it turned into gangrene. First, they cut his foot off, but the gangrene came back. Or maybe the doctors had not removed it all. It continued to spread, so they cut his whole leg off. >, <Post I came to the United States when I was five years old. My parents brought me here. They were running away from persecution in Lithuania. These were bad times for my family. When we came to New York we lived on the Lower East Side and things were much better. I remember that there was a Polish restaurant downstairs from where we lived, and I would sometimes do my homework there when my parents had not arrived home yet from work. There was a real community in our neighborhood. In some ways, we felt safe. In other ways not, because there was a lot of crime in this neighborhood back then. And in the seventies and eighties it got worse. I worked in a hardware store on Clinton and Rivington from 1970 to 1975, and we were robbed many times. We started keeping the door locked. When I was offered a job in a hardware store on 18th Street near Union Square I was happy to go. Union Square was very different back then. 
+```
+We are not sure at present how to retrieve all the transcripts of one interviewee (or all posts of one user) in the command line, but this is only because we have not had enough time to figure it out. The great thing is that all of the information you provided through the front end of the web app now resides in the app's database. 
+
+## Error handling:
 
 If an error occurs on the production version of the application, you will want to know right away. We have configured Flask to send us an email immediately after an error, with the stack trace of the error in the email body. As the app is configured, the email will go to one of the developers of this version of the oral history app. To change this email address, open config.py at the top level of the ohapp folder and change the email address in that module. There is also an error log built into this app, located in Logs/ohapp.log
 
+## Use of this app
 
+If you want to modify this app and use it for another project, you can change most of the language that users will see on the front end in the .html files in app/templates/ and also in app/routes.py, app/models.py, and app.forms.py, as well as other modules. Just be careful what you change (only change words in quotation marks and not all of these can be changed) and keep track of what you change so that you can go back, as you will probably break the code a whole bunch of times. 
+
+## License
+
+Ohapp is licensed under the GNU General Public License, a free, copyleft license for software and other kinds of works. 
+
+    This file is part of Ohapp.
+
+    Ohapp is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Ohapp is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Ohapp.  If not, see <https://www.gnu.org/licenses/>.
