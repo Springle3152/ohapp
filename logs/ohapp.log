@@ -83,3 +83,6 @@ Traceback (most recent call last):
 werkzeug.routing.BuildError: Could not build url for endpoint 'Login to register'. Did you mean 'register' instead?
 2019-05-20 16:05:00,036 INFO: Ohapp startup [in /Users/sabinapringle/Desktop/projects/ohapp/app/__init__.py:51]
 2019-05-20 16:08:15,930 INFO: Ohapp startup [in /Users/sabinapringle/Desktop/projects/ohapp/app/__init__.py:51]
+2019-05-20 16:15:41,460 INFO: Ohapp startup [in /Users/sabinapringle/Desktop/projects/ohapp/app/__init__.py:51]
+2019-05-20 16:31:35,681 INFO: Ohapp startup [in /Users/sabinapringle/Desktop/projects/ohapp/app/__init__.py:51]
+2019-05-20 16:34:31,589 INFO: Ohapp startup [in /Users/sabinapringle/Desktop/projects/ohapp/app/__init__.py:51]
