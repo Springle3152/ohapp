@@ -46,5 +46,5 @@ class EditProfileForm(FlaskForm):
 
 class PostForm(FlaskForm):
     post = TextAreaField('Contribute or comment', validators=[
-        DataRequired(), Length(min=1, max=640)])
+        DataRequired(), Length(min=1, max=10000)])
     submit = SubmitField('Submit')
