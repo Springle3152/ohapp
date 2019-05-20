@@ -13,7 +13,7 @@
             {% if current_user.is_anonymous %}
             <a href="{{ url_for('login') }}">Find</a>
             {% else %}
-            <a href="{{ url_for('user', username=current_user.username) }}">Abstract</a>
+            <a href="{{ url_for('user', username=current_user.username) }}">Read</a>
             <a href="{{ url_for('logout') }}">New Search</a>
             {% endif %}
         </div>
