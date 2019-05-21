@@ -18,8 +18,6 @@ Ohapp is coded with Python using the Flask framework. You will need to install P
 
 ## Installation
 
-### NOTE TO CHRISTOFER: can you please revise the installation instructions carefully? See my sms re. venv. 
-
 ## Prerequisites
 
 Create a GitHub account: https://github.com/join
@@ -34,7 +32,7 @@ git clone https://github.com/ . . . .
 ```
 Then, change into the cloned directory. In Windows, type
 ```
-$ cd C:\Users\Username\ohapp  CHRISTOFER PLEASE CHECK IF THIS IS CORRECT - KEEP IN MIND THAT I TOLD THE READER TO SAVE OHAPP IN A PROJECTS FOLDER IN DESKTOP.
+$ cd C:\Users\Username\ohapp
 ```
 On a Mac, type
 ```
