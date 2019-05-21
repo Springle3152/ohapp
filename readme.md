@@ -1,21 +1,20 @@
 # Oral History App
-This is an application for collecting oral histories. An interviewer is asked to create an account for each interview they will upload, giving this account an interviewee name, an email address and a password. An account is then created with a unique avatar. The interviewer, interviewee and anyone else who has the password can then log in and read and/or add an abstract and the transcript of an interview, which the app stores in a database. The abstract and transcript are retrievable from the find interview page and the database is searchable from the command line. In the future this app will also be able to house audio files and images associated with the interviews.
+Ohapp is an application for collecting oral histories. An interviewer is asked to create an account for each interview they will upload, giving this account an interviewee name, an email address and a password. An account is then created with a unique avatar. The interviewer, interviewee and anyone else who has the password can read and/or add an abstract and the transcript of an interview, which the app stores in a database. The abstract and transcript are retrievable from the Find page and the database is searchable from the command line. In the future, this app will also be able to house audio files and images associated with the interviews.
 
 ## Instructions
-The app is fairly easy to use. Once an interview has been transcribed, an interviewer can create or log in to an interview account and add a transcript by pasting or typing it into a form. The transcript is then stored in the database of the oral history app.
+Ohapp is fairly easy to use. Once an interview has been transcribed, an interviewer can create or log in to an interview account and add a transcript by pasting or typing it into a form. The transcript is then stored in the app's database.
 
 This page will show you how to
 
- - Install the oral history app on your local server
- - Add a new interview account to the database and create an interviewee profile with a brief abstract of the interview
- - Add the transcript of an interview to the interviewee account
- - Retrieve interviews on the web app
+ - Install Ohapp on your local server
+ - Create a new interview account and an interviewee profile with a brief abstract of the interview
+ - Add transcripts of interviews to interviewee accounts
+ - Read interviews and abstracts
  - Consult the app database to get a list of all interviewees, abstracts and transcripts attributed to these 
- - Remove interview accounts from the database
- - Change the name of the app and descriptive text on the app home page so that you can make different versions of this app for different projects.
+ - Change the name of and descriptive text on the app so as to make different versions of this app for different projects.
 
 ## Getting Started
-This app is coded with Python using the Flask framework. You will need to install Python and then, with Python, install Flask on your computer. You will also need to create a GitHub account so that you can download the app to your computer. 
+Ohapp is coded with Python using the Flask framework. You will need to install Python and then, with Python, install Flask on your computer. You will also need to create a GitHub account so that you can clone Ohapp and download it onto your computer. 
 
 ## Installation
 
@@ -24,49 +23,43 @@ This app is coded with Python using the Flask framework. You will need to instal
 ## Prerequisites
 
 Create a GitHub account:
-* git: https://git-scm.com/downloads
+* https://github.com/join
 
 Install Python:
 * Python 3: https://www.python.org/downloads/
 
->C:\> install python
->C:\> 
->```
-
 ## Procedure
 
-* Open your command prompt and install virtualenv (a Python virtual enviroment package) using Python's Pip tool:
-```
-$ pip install virtualenv
-```
-* from within a directory for projects, clone the Ohapp repository:
+First, clone the Ohapp repository. Save it in a projects folder on your Desktop.
 ```
 git clone https://github.com/ . . . . 
 ```
-* change into the cloned directory:
-
-In Windows:
+Then, change into the cloned directory. In Windows, type
 ```
-$ cd C:\Users\Username\ohapp
+$ cd C:\Users\Username\ohapp  CHRISTOFER PLEASE CHECK IF THIS IS CORRECT - KEEP IN MIND THAT I TOLD THE READER TO SAVE OHAPP IN A PROJECTS FOLDER IN DESKTOP.
 ```
-On a Mac: 
+On a Mac, type
 ```
-$ cd Users\Username\ohapp
+$ cd Desktop/projects/ohapp
 ```
-* Create and load virtual environment in a subdirectory, for example we created one called "venv"
+Open your command prompt and create a virtual envirnoment by running the venv package
 ```
+$ python3 -m venv venv
+```
+If you are using Windows, You might have to use Pip to install the venv package. If so, type
+```
+$ pip install virtualenv
 $ virtualenv venv
 ```
-* Activate the virtual environment (it will say venv infront of the directory location on the command prompt, that is how you know you are in the virtual environment)
-* If you are using Windows, type:
+Activate the virtual environment (it will say venv infront of the directory location on the command prompt, that is how you know you are in the virtual environment). If you are using Windows, type
 ```
 $ source venv\Scripts\activate
 ```
-* On a Mac, type:
+On a Mac, type
 ```
 $ source venv\bin\activate
 ```
-* Run the ohapp app:
+Run the ohapp app
 ```
 (venv) $ python ohapp.py
 ```
@@ -77,6 +70,8 @@ This means your enviroment is running and accessible through your local host. Le
 http://127.0.0.1:5000/
 
 !!!Do not close the command prompt window, it is running from there!!!
+
+## ARE YOU SURE THIS IS ALL THE USER NEEDS TO DO TO GET OHAPP RUNNING?
 
 # Adding Interviews
 
