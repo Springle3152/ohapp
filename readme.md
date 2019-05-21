@@ -26,11 +26,7 @@ Install Python 3: https://www.python.org/downloads/
 
 ## Procedure
 
-First, clone the Ohapp repository. Save it in a projects folder on your Desktop.
-```
-git clone https://github.com/ . . . . 
-```
-Then, change into the cloned directory. In Windows, type
+First, clone the Ohapp repository. Save it in a projects folder on your Desktop. Then, change into the cloned directory. In Windows, type
 ```
 $ cd C:\Users\Username\ohapp
 ```
@@ -47,7 +43,7 @@ If you are using Windows, You might have to use Pip to install the venv package.
 $ pip install virtualenv
 $ virtualenv venv
 ```
-Activate the virtual environment (it will say venv infront of the directory location on the command prompt, that is how you know you are in the virtual environment). If you are using Windows, type
+Activate the virtual environment. If you are using Windows, type
 ```
 $ source venv\Scripts\activate
 ```
@@ -55,7 +51,7 @@ On a Mac, type
 ```
 $ source venv\bin\activate
 ```
-Run the app
+You will now see (venv) in front of the directory location in the command prompt. This is how you know you are in the virtual environment. Run the app by typing
 ```
 (venv) $ python ohapp.py
 ```
@@ -89,7 +85,7 @@ To retrieve other interviews you or someone else added to Ohapp, click on New Se
 
 # Search the database
 
-To query the database, go into the ohapp directory in the command line, run Python, and type the following commands to see the list of all interviewees (note that in the database the interviewees are called users):
+To query the database, go into the ohapp directory in the command line, run Python (to run Python just type Python in the command line), and type the following commands to see the list of all interviewees (note that in the database the interviewees are called users):
 ```
 >>> from app import db
 >>> from app.models import User, Post
