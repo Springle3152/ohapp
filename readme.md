@@ -1,8 +1,8 @@
 # Oral History App
-Ohapp is an application for collecting oral histories. An interviewer is asked to create an account for each interview they will upload, giving this account an interviewee name, an email address and a password. An account is then created with a unique avatar. The interviewer, interviewee and anyone else who has the password can read and/or add an abstract and the transcript of an interview, which the app stores in a database. The abstract and transcript are retrievable from the Find page and the database is searchable from the command line. In the future, this app will also be able to house audio files and images associated with the interviews.
+Ohapp is an application for collecting oral histories. An interviewer is asked to create an account for each interview they will upload, giving this account an interviewee name, an email address and a password. An account is then created with a unique avatar. The interviewer, interviewee and anyone else who has the password can read and/or add an abstract and the transcript of an interview, which Ohapp stores in a database. The abstract and transcript are retrievable from the Find page and the database is searchable from the command line. In the future, Ohapp will also be able to house audio files and images associated with the interviews.
 
 ## Instructions
-Ohapp is fairly easy to use. Once an interview has been transcribed, an interviewer can create or log in to an interview account and add a transcript by pasting or typing it into a form. The transcript is then stored in the app's database.
+Ohapp is fairly easy to use. Once an interview has been transcribed, an interviewer can create or log in to an interview account and add a transcript by pasting or typing it into a form. The transcript is then stored in Ohapp's database.
 
 This page will show you how to
 
@@ -10,11 +10,11 @@ This page will show you how to
  - Create a new interview account and an interviewee profile with a brief abstract of the interview
  - Add transcripts of interviews to interviewee accounts
  - Read interviews and abstracts
- - Consult the app database to get a list of all interviewees, abstracts and transcripts attributed to these 
+ - Consult the database to get a list of all interviewees, abstracts and transcripts attributed to these 
  - Change the name of and descriptive text on the app so as to make different versions of this app for different projects.
 
 ## Getting Started
-Ohapp is coded with Python using the Flask framework. You will need to install Python and then, with Python, install Flask on your computer. You will also need to create a GitHub account so that you can clone Ohapp and download it onto your computer. 
+Ohapp is coded with Python using the Flask framework. You will need to install Python and then, with Python, install Flask on your computer. You will also need to create a GitHub account so that you can clone Ohapp and download Ohapp onto your computer. 
 
 ## Installation
 
@@ -22,11 +22,9 @@ Ohapp is coded with Python using the Flask framework. You will need to install P
 
 ## Prerequisites
 
-Create a GitHub account:
-* https://github.com/join
+Create a GitHub account: https://github.com/join
 
-Install Python:
-* Python 3: https://www.python.org/downloads/
+Install Python 3: https://www.python.org/downloads/
 
 ## Procedure
 
@@ -59,7 +57,7 @@ On a Mac, type
 ```
 $ source venv\bin\activate
 ```
-Run the ohapp app
+Run the app
 ```
 (venv) $ python ohapp.py
 ```
