@@ -67,8 +67,6 @@ http://127.0.0.1:5000/
 
 !!!Do not close the command prompt window, it is running from there!!!
 
-## ARE YOU SURE THIS IS ALL THE USER NEEDS TO DO TO GET OHAPP RUNNING?
-
 # Adding Interviews
 
 To add the transcript of an interview to Ohapp, first click on "Add New Interview" at the bottom of the landing page. You will be redirected to the Add new interview form. 
