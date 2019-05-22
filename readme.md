@@ -14,13 +14,11 @@ This page will show you how to
  - Change the name of and descriptive text on the app so as to make different versions of this app for different projects.
 
 ## Getting Started
-Ohapp is coded with Python using the Flask framework. You will need to install Python and then, with Python, install Flask on your computer. You will also need to create a GitHub account so that you can clone Ohapp and download Ohapp onto your computer. 
+Ohapp is coded with Python using the Flask framework. You will need to install Python and then, with Python, install Flask on your computer. You will also need to have Git installed so that you can clone Ohapp and download Ohapp onto your computer. 
 
 ## Installation
 
-## Prerequisites
-
-Create a GitHub account: https://github.com/join
+Install Git. [Here](https://github.com/DHRI-Curriculum/git) are some instructions on how to install and use Git
 
 Install Python 3: https://www.python.org/downloads/
 
