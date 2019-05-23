@@ -24,7 +24,7 @@ Install Python 3. [Here](https://www.python.org/downloads/) to download and inst
 
 ## Procedure
 
-First, go into your command line and change directory into Desktop. 
+First, go into your command line. On a Mac, go into the command line by typing "terminal" in Spotlight Search and hitting enter. In the command line, change directory into Desktop. 
 ```
 $ cd Desktop/
 ```
