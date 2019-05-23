@@ -24,9 +24,21 @@ Install Python 3. [Here](https://www.python.org/downloads/) to download and inst
 
 ## Procedure
 
-First, clone the Ohapp repository. Save it in a folder titled 'projects' on your Desktop. Then, open your command prompt and go to the cloned directory, simply type
+First, go into your command line and change directory into Desktop. 
 ```
-$ cd Desktop/projects/ohapp
+$ cd Desktop/
+```
+Create a folder called "projects." Change directory into projects and create a folder called "Ohapp." This is where you will put your cloned app.
+```
+$ mkdir projects
+$ cd projects
+$ mkdir ohapp
+$ cd ohapp
+```
+Clone the Ohapp repository from Github following the instructions in the [DHRI tutorial] (https://github.com/DHRI-Curriculum/git). You are saving it in a folder titled "projects" on your Desktop. Type "pwd" (stands for print working directory) to make sure you are in the ohapp folder.
+```
+$ pwd
+User/username/Desktop/projects/ohapp
 ```
 Create a virtual envirnoment by running the venv package
 ```
