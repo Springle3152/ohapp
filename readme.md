@@ -24,11 +24,11 @@ Install Python 3. [Here](https://www.python.org/downloads/) to download and inst
 
 ## Procedure
 
-First, clone the Ohapp repository. The repository can be found [here](https://github.com/Springle3152/ohapp/). Save it in a projects folder on your Desktop. Then, change into the cloned directory. In Windows and Mac, type
+First, clone the Ohapp repository. Save it in a folder titled 'projects' on your Desktop. Then, open your command prompt and go to the cloned directory, simply type
 ```
 $ cd Desktop/projects/ohapp
 ```
-Open your command prompt and create a virtual envirnoment by running the venv package
+Create a virtual envirnoment by running the venv package
 ```
 $ python3 -m venv venv
 ```
@@ -51,11 +51,11 @@ You will now see (venv) in front of the directory location in the command prompt
 ```
 Running on http:127.0.0.1:5000
 
-This means your enviroment is running and accessible through your local host. Leave your command prompt open and then go to this link in a web browser:
+This means your enviroment is running and accessible through your local host. Leave your command prompt open and then go to this link in a web browser: http://127.0.0.1:5000/
 
-http://127.0.0.1:5000/
+Do not close the command prompt window, it is running from there!
 
-!!!Do not close the command prompt window, it is running from there!!!
+To deactivate the command prompt, type ctr+c 
 
 # Adding Interviews
 
