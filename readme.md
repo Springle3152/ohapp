@@ -28,7 +28,7 @@ First, go into your command line and change directory into Desktop.
 ```
 $ cd Desktop/
 ```
-Create a folder called "projects." Change directory into projects and create a folder called "Ohapp." This is where you will put your cloned app.
+Create a folder called "projects." Change directory into projects and create a folder called "ohapp." This is where you will put your cloned app.
 ```
 $ mkdir projects
 $ cd projects
@@ -63,11 +63,21 @@ Clone the Ohapp repository from Github. Look again at this [tutorial](https://gi
 
 Run the app by typing
 ```
-(venv) $ python ohapp.py
+(venv) $ export FLASK_APP=ohapp
+(venv) $ flask run
 ```
+You should see this:
+```
+ * Serving Flask app "ohapp"
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+[2019-05-23 05:33:02,434] INFO in __init__: Ohapp startup
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 Running on http:127.0.0.1:5000
-
-This means your enviroment is running and accessible through your local host. Leave your command prompt open and then go to this link in a web browser: http://127.0.0.1:5000/
+```
+This means your enviroment is running and accessible through your local host. Leave your command prompt open and paste the url http://127.0.0.1:5000/ in your web browser.
 
 Do not close the command prompt window, it is running from there!
 
