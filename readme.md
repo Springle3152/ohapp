@@ -35,7 +35,7 @@ $ cd projects
 $ mkdir ohapp
 $ cd ohapp
 ```
-Clone the Ohapp repository from Github following the instructions in the [DHRI tutorial] (https://github.com/DHRI-Curriculum/git). You are saving it in a folder titled "projects" on your Desktop. Type "pwd" (stands for print working directory) to make sure you are in the ohapp folder.
+Type "pwd" (which stands for print working directory) to make sure you are in the ohapp folder.
 ```
 $ pwd
 User/username/Desktop/projects/ohapp
@@ -57,7 +57,11 @@ On a Mac, type
 ```
 $ source venv\bin\activate
 ```
-You will now see (venv) in front of the directory location in the command prompt. This is how you know you are in the virtual environment. Run the app by typing
+You will now see (venv) in front of the directory location in the command prompt. This is how you know you are in the virtual environment. 
+
+Clone the Ohapp repository from Github. Look again at this [tutorial](https://github.com/DHRI-Curriculum/git) for instructions on how to clone. Once you have cloned, the files will be in the ohapp folder on your Desktop. 
+
+Run the app by typing
 ```
 (venv) $ python ohapp.py
 ```
