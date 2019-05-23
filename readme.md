@@ -79,7 +79,7 @@ Running on http:127.0.0.1:5000
 ```
 This means your enviroment is running and accessible through your local host. Leave your command prompt open and paste the url http://127.0.0.1:5000/ in your web browser.
 
-Do not close the command prompt window, it is running from there!
+Do not close the command prompt window, the app is running from there!
 
 To stop running the app, type ctr+c. To get out of your virtual environment, type deactivate. 
 
