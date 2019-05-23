@@ -67,7 +67,7 @@ This means your enviroment is running and accessible through your local host. Le
 
 Do not close the command prompt window, it is running from there!
 
-To deactivate the command prompt, type ctr+c 
+To stop running the app, type ctr+c. To get out of your virtual environment, type deactivate. 
 
 # Adding Interviews
 
