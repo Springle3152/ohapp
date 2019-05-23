@@ -20,15 +20,11 @@ Ohapp is coded with Python using the Flask framework. You will need to install P
 
 Install Git. [Here](https://github.com/DHRI-Curriculum/git) are some instructions on how to install and use Git
 
-Install Python 3: https://www.python.org/downloads/
+Install Python 3. [Here](https://www.python.org/downloads/) to download and install Python
 
 ## Procedure
 
-First, clone the Ohapp repository. Save it in a projects folder on your Desktop. Then, change into the cloned directory. In Windows, type
-```
-$ cd C:\Users\Username\ohapp
-```
-On a Mac, type
+First, clone the Ohapp repository. Save it in a projects folder on your Desktop. Then, change into the cloned directory. In Windows and  Mac, type
 ```
 $ cd Desktop/projects/ohapp
 ```
