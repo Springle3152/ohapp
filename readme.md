@@ -24,7 +24,7 @@ Install Python 3. [Here](https://www.python.org/downloads/) to download and inst
 
 ## Procedure
 
-First, clone the Ohapp repository. Save it in a projects folder on your Desktop. Then, change into the cloned directory. In Windows and  Mac, type
+First, clone the Ohapp repository. The repository can be found [here](https://github.com/Springle3152/ohapp/). Save it in a projects folder on your Desktop. Then, change into the cloned directory. In Windows and Mac, type
 ```
 $ cd Desktop/projects/ohapp
 ```
