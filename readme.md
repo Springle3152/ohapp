@@ -49,7 +49,7 @@ Now, create a virtual envirnoment by running the venv package
 ```
 $ python3 -m venv venv
 ```
-If you are using Windows, You might have to use Pip (Pip is a tool that comes with Python) to install the venv package. If so, type
+If you are using Windows, You might have to use Pip (Pip is a tool for installing packages that comes with Python) to install the venv package. If so, type
 ```
 > pip install virtualenv
 > virtualenv venv
