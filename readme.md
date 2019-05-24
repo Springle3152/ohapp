@@ -25,7 +25,7 @@ Note: when installing Anaconda, check the advanced options box to select "Add An
 
 ## Procedure
 
-First, go into your command line. On a Mac, go into the command line by typing "terminal" in Spotlight Search and hitting enter. In Windows, type "cmd" in the Windows search bar. Once you are in the command line, change directory into Desktop. 
+First, go into your command line. On a Mac, go into the command line by typing "terminal" in Spotlight Search and hitting enter. In Windows, type "CMD" in the Windows search bar. Once you are in the command line, change directory into Desktop. 
 ```
 $ cd Desktop/
 ```
@@ -33,15 +33,18 @@ Create a folder called "projects." Change directory into projects and create a f
 ```
 $ mkdir projects
 $ cd projects
-$ mkdir ohapp
-$ cd ohapp
 ```
-Type "pwd" (which stands for print working directory) to make sure you are in the ohapp folder.
+To see where you are, type "pwd" in MacOS. You should be in the projects folder.
 ```
 $ pwd
-User/username/Desktop/projects/ohapp
+User/username/Desktop/projects
 ```
-Create a virtual envirnoment by running the venv package
+To see where you are in Windows, type "cd"
+ ```
+$ cd
+User/username/Desktop/projects
+```
+Now, create a virtual envirnoment by running the venv package
 ```
 $ python3 -m venv venv
 ```
@@ -50,17 +53,35 @@ If you are using Windows, You might have to use Pip to install the venv package.
 $ pip install virtualenv
 $ virtualenv venv
 ```
-Activate the virtual environment. If you are using Windows, type
-```
-$ source venv\Scripts\activate
-```
-On a Mac, type
+Activate the virtual environment. On a Mac, type
 ```
 $ source venv\bin\activate
 ```
+If you are using Windows, type
+```
+C: venv\Scripts\activate
+```
 You will now see (venv) in front of the directory location in the command prompt. This is how you know you are in the virtual environment. 
 
-Clone the Ohapp repository from Github. Look again at this [tutorial](https://github.com/DHRI-Curriculum/git) for instructions on how to clone. Once you have cloned, the files will be in the ohapp folder on your Desktop. 
+Clone the Ohapp repository from Github by clicking on the green Clone or Download button at the top of this screen, copying the URL in the box, and typing 
+```
+(venv) $ git clone https://github.com/Springle3152/ohapp.git
+```
+You might want to see this [tutorial](https://github.com/DHRI-Curriculum/git) for more instructions on how to clone. Once you have cloned, the files will be in the ohapp folder on your Desktop. Go into the Ohapp by typing
+```
+(venv) $ cd ohapp
+```
+Now you are in the folder that contains the app. The next thing you need to do is install Flask. To do this, type
+```
+(venv) $ pip install flask
+```
+If you want to confirm that your virtual environment now has Flask installed, you can start the python interpreter by typing "python" and then the command to import Flask
+```
+(venv) $ python
+>>> import flask
+>>>
+```
+If this statement does not give you any errors, Flask is installed and ready to be used. Now you can run the app.
 
 Run the app by typing
 ```
@@ -82,7 +103,7 @@ This means your enviroment is running and accessible through your local host. Le
 
 **Do not close the command prompt window, the app is running from there!**
 
-To stop running the app, type **CTRL+C**. To get out of your virtual environment, type **deactivate**. 
+To stop running the app, type **CTRL+C** on MacOS or **CTRL+Z** on Windows. **To get out of your virtual environment, type **deactivate**. 
 
 # Adding Interviews
 
@@ -152,9 +173,9 @@ If an error occurs on the production version of the application, you will want t
 
 ## Use of this app
 
-If you want to modify this app and use it for another project, you can change most of the language that users will see on the front end in the HTML files in app/templates/ and also in app/routes.py, app/models.py, and app.forms.py, as well as other modules. Just be careful what you change (only change words in quotation marks and not all of these can be changed) and keep track of what you change so that you can go back, as you will probably break the code a whole bunch of times. The text editor we used to develop this app is VS Code, which you can install from your Anaconda navigator. We recommend this text editor. To open a file in the text editor from the command line, type 
+If you want to modify this app and use it for another project, you can change most of the language that users will see on the front end in the HTML files in ohapp/app/templates/(filename).html and also in ohapp/app/routes.py, ohapp/app/models.py, and ohapp/app/forms.py, as well as other modules. Just be careful what you change (only change words in quotation marks and not all of these can be changed) and keep track of what you change so that you can go back, as you will probably break the code a whole bunch of times. The text editor we used to develop this app is VS Code, which you can install from your Anaconda navigator. We recommend this text editor. To open a file in the text editor from the command line, type 
 ```
-(venv)$ code [name of file]
+(venv) $ code <name of file>
 ```
 ## License
 
