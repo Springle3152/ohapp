@@ -21,6 +21,7 @@ Ohapp is coded with Python using the Flask framework. You will need to install P
 Install Git. [Here](https://github.com/DHRI-Curriculum/git/blob/master/sections/gitconfig.md) are instructions on how to install Git.
 
 [Install Python 3](https://www.anaconda.com/distribution/#download-section) using Anaconda. Anaconda is hefty so this installation will take a little time. We find, however, that installing Anaconda is the best way to install Python.
+Note: when installing Anaconda, check the advanced options box to select "Add Anaconda to my PATH environment variable." You may not be able to do this if you are not an administrator of your computer, in which case you can set the environment variable [manually](https://medium.com/@GalarnykMichael/install-python-on-windows-anaconda-c63c7c3d1444).
 
 ## Procedure
 
@@ -151,8 +152,10 @@ If an error occurs on the production version of the application, you will want t
 
 ## Use of this app
 
-If you want to modify this app and use it for another project, you can change most of the language that users will see on the front end in the HTML files in app/templates/ and also in app/routes.py, app/models.py, and app.forms.py, as well as other modules. Just be careful what you change (only change words in quotation marks and not all of these can be changed) and keep track of what you change so that you can go back, as you will probably break the code a whole bunch of times. 
-
+If you want to modify this app and use it for another project, you can change most of the language that users will see on the front end in the HTML files in app/templates/ and also in app/routes.py, app/models.py, and app.forms.py, as well as other modules. Just be careful what you change (only change words in quotation marks and not all of these can be changed) and keep track of what you change so that you can go back, as you will probably break the code a whole bunch of times. The text editor we used to develop this app is VS Code, which you can install from your Anaconda navigator. We recommend this text editor. To open a file in the text editor from the command line, type 
+```
+(venv)$ code [name of file]
+```
 ## License
 
 Ohapp is licensed under the GNU General Public License, a free, copyleft license for software and other kinds of works. 
