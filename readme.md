@@ -18,13 +18,13 @@ Ohapp is coded with Python using the Flask framework. You will need to install P
 
 ## Installation
 
-Install Git. [Here](https://github.com/DHRI-Curriculum/git) are some instructions on how to install and use Git
+Install Git. [Here](https://github.com/DHRI-Curriculum/git/blob/master/sections/gitconfig.md) are instructions on how to install Git.
 
-Install Python 3. [Here](https://www.python.org/downloads/) to download and install Python
+Install Python 3. [Here](https://www.anaconda.com/distribution/#download-section) are instructions for downloading and installing Python using Anaconda. Anaconda is hefty so this installation will take a little time. We find, however, that installing Anaconda is the best way to install Python.
 
 ## Procedure
 
-First, go into your command line. On a Mac, go into the command line by typing "terminal" in Spotlight Search and hitting enter. Once you are in the command line, change directory into Desktop. 
+First, go into your command line. On a Mac, go into the command line by typing "terminal" in Spotlight Search and hitting enter. In Windows, type "cmd" in the Windows search bar. Once you are in the command line, change directory into Desktop. 
 ```
 $ cd Desktop/
 ```
