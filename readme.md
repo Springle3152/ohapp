@@ -41,7 +41,7 @@ User/username/Desktop/projects
 ```
 To see where you are in Windows, type "cd"
  ```
-$ cd
+> cd
 User/username/Desktop/projects
 ```
 Now, create a virtual envirnoment by running the venv package
@@ -50,7 +50,7 @@ $ python3 -m venv venv
 ```
 If you are using Windows, You might have to use Pip to install the venv package. If so, type
 ```
-$ pip install virtualenv
+> pip install virtualenv
 $ virtualenv venv
 ```
 Activate the virtual environment. On a Mac, type
@@ -59,7 +59,7 @@ $ source venv\bin\activate
 ```
 If you are using Windows, type
 ```
-C: venv\Scripts\activate
+> venv\Scripts\activate
 ```
 You will now see (venv) in front of the directory location in the command prompt. This is how you know you are in the virtual environment. 
 
