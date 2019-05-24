@@ -68,7 +68,7 @@ Clone the Ohapp repository from Github by clicking on the green Clone or Downloa
 ```
 (venv) $ git clone https://github.com/Springle3152/ohapp.git
 ```
-You might want to see this [tutorial](https://github.com/DHRI-Curriculum/git) for more instructions on how to clone. Once you have cloned, the files will be in the ohapp folder on your Desktop. Go into the Ohapp by typing
+You might want to see this [tutorial](https://github.com/DHRI-Curriculum/git) for more instructions on how to clone. Once you have cloned, the files will be in a new folder (folders are directories) in your projects directory called ohapp. Go into the ohapp directory by typing
 ```
 (venv) $ cd ohapp
 ```
@@ -84,7 +84,15 @@ If you want to confirm that your virtual environment now has Flask installed, yo
 ```
 If this statement does not give you any errors, Flask is installed and ready to be used. Now you can run the app.
 
-Run the app by typing
+Flask uses extensions to make the app do what we want it to do. You need to install these extensions before you can run the app. These are the commands to install the extensions that you will need (after each command hit return and your computer will install the extension; when the extension is installed type in the next command, computer will install extension, and so on):
+```
+(venv) $ pip install python-dotenv
+(venv) $ pip install flask-wtf
+(venv) $ pip install flask-sqlalchemy
+(venv) $ pip install flask-migrate
+(venv) $ pip install flask-login
+```
+Now you have everything you need. Run the app by typing
 ```
 (venv) $ export FLASK_APP=ohapp
 (venv) $ flask run
