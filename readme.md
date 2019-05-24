@@ -16,7 +16,7 @@ This page will show you how to
 ## Getting Started
 Ohapp is coded with Python using the Flask framework. You will need to install Python and then, with Python, install Flask on your computer. You will also need to have Git installed so that you can clone Ohapp and download Ohapp onto your computer. 
 
-## Installation
+## Install Python and Git
 
 Install Git. [Here](https://github.com/DHRI-Curriculum/git/blob/master/sections/gitconfig.md) are instructions on how to install Git.
 
@@ -24,7 +24,7 @@ Install Git. [Here](https://github.com/DHRI-Curriculum/git/blob/master/sections/
 
 **Note: when installing Anaconda, check the advanced options box to select "Add Anaconda to my PATH environment variable."** You may not be able to do this if you are not an administrator of your computer, in which case you can set the environment variable [manually](https://medium.com/@GalarnykMichael/install-python-on-windows-anaconda-c63c7c3d1444).
 
-## Procedure
+## Set up Flask
 
 First, go into your command line. On a Mac, go into the command line by typing "terminal" in Spotlight Search and hitting enter. In Windows, type "CMD" in the Windows search bar. Once you are in the command line, change directory into Desktop. 
 ```
@@ -72,7 +72,7 @@ You might want to see this [tutorial](https://github.com/DHRI-Curriculum/git) fo
 ```
 (venv) $ cd ohapp
 ```
-Now you are in the folder that contains the app. The next thing you need to do is install Flask. To do this, type
+Now you are in the directory that contains the app. The next thing you need to do is install Flask. To do this, type
 ```
 (venv) $ pip install flask
 ```
@@ -82,7 +82,9 @@ If you want to confirm that your virtual environment now has Flask installed, yo
 >>> import flask
 >>>
 ```
-If this statement does not give you any errors, Flask is installed and ready to be used. Now you can run the app.
+If this statement does not give you any errors, Flask is installed and ready to be used. 
+
+## Extensions
 
 Flask uses extensions to make the app work. You need to install five extensions before you can run the app. The **first** is to remember environment variables:
 ```
