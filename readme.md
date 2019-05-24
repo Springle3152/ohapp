@@ -51,7 +51,7 @@ $ python3 -m venv venv
 If you are using Windows, You might have to use Pip to install the venv package. If so, type
 ```
 > pip install virtualenv
-$ virtualenv venv
+> virtualenv venv
 ```
 Activate the virtual environment. On a Mac, type
 ```
