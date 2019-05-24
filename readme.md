@@ -11,10 +11,10 @@ This page will show you how to
  - Add transcripts of interviews to interviewee accounts
  - Read interviews and abstracts
  - Consult the database to get a list of all interviewees, abstracts and transcripts attributed to these 
- - Change the name of and descriptive text on the app so as to make different versions of this app for different projects.
+ - Change names and other language on the front end of the app so as to make different versions for different projects.
 
 ## Getting Started
-Ohapp is coded with Python using the Flask framework. You will need to install Python and then, with Python, install Flask on your computer. You will also need to have Git installed so that you can clone Ohapp and download Ohapp onto your computer. 
+Ohapp is coded with Python using the Flask framework. You will need to install Python and then, with Python, install Flask on your computer. You will also need to have Git installed so that you can clone Ohapp and download it onto your computer. 
 
 ## Install Python and Git
 
@@ -86,7 +86,7 @@ If this statement does not give you any errors, Flask is installed and ready to 
 
 ## Extensions
 
-Flask uses extensions to make the app work. You need to install five extensions before you can run the app. The **first** is to remember environment variables:
+Flask uses extensions to make the app work. You need to install five extensions before you can run the app. The **first** allows your computer to remember environment variables:
 ```
 (venv) $ pip install python-dotenv
 ```
