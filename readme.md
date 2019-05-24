@@ -84,15 +84,27 @@ If you want to confirm that your virtual environment now has Flask installed, yo
 ```
 If this statement does not give you any errors, Flask is installed and ready to be used. Now you can run the app.
 
-Flask uses extensions to make the app do what we want it to do. You need to install these extensions before you can run the app. These are the commands to install the extensions that you will need (after each command hit return and your computer will install the extension; when the extension is installed type in the next command, computer will install extension, and so on):
+Flask uses extensions to make the app do what we want it to do. You need to install five extensions before you can run the app. The first is to remember environment variables:
 ```
 (venv) $ pip install python-dotenv
+```
+Now install the Flask-wtf (wtf = what the forms) extension so that the forms work properly:
+```
 (venv) $ pip install flask-wtf
+```
+Install this extension to make the database work:
+```
 (venv) $ pip install flask-sqlalchemy
+```
+This extension is a Flask wrapper for Alembic, a database migration framework for SQLAlchemy:
+```
 (venv) $ pip install flask-migrate
+```
+This one is for retrieving password-protected interviews:
+```
 (venv) $ pip install flask-login
 ```
-Now you have everything you need. Run the app by typing
+**Now you have everything you need.** Run the app by typing
 ```
 (venv) $ export FLASK_APP=ohapp
 (venv) $ flask run
