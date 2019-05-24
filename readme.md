@@ -30,7 +30,7 @@ First, go into your command line. On a Mac, go into the command line by typing "
 ```
 $ cd Desktop/
 ```
-Create a directory called "projects" (directories are folders; we will call them directories). Change directory into projects and create a directory called "ohapp." This is where you will put your cloned app.
+Create a directory called "projects" (directories are folders; we will call them directories). Change directory into projects.
 ```
 $ mkdir projects
 $ cd projects
@@ -49,7 +49,7 @@ Now, create a virtual envirnoment by running the venv package
 ```
 $ python3 -m venv venv
 ```
-If you are using Windows, You might have to use Pip to install the venv package. If so, type
+If you are using Windows, You might have to use Pip (Pip is a tool that comes with Python) to install the venv package. If so, type
 ```
 > pip install virtualenv
 > virtualenv venv
