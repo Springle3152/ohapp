@@ -30,12 +30,12 @@ First, go into your command line. On a Mac, go into the command line by typing "
 ```
 $ cd Desktop/
 ```
-Create a folder called "projects." Change directory into projects and create a folder called "ohapp." This is where you will put your cloned app.
+Create a directory called "projects" (directories are folders; we will call them directories). Change directory into projects and create a directory called "ohapp." This is where you will put your cloned app.
 ```
 $ mkdir projects
 $ cd projects
 ```
-To see where you are, type "pwd" in MacOS. You should be in the projects folder.
+To see where you are, type "pwd" in MacOS. You should be in the projects directory.
 ```
 $ pwd
 User/username/Desktop/projects
@@ -68,11 +68,11 @@ Clone the Ohapp repository from Github by clicking on the green Clone or Downloa
 ```
 (venv) $ git clone https://github.com/Springle3152/ohapp.git
 ```
-You might want to see this [tutorial](https://github.com/DHRI-Curriculum/git) for more instructions on how to clone. Once you have cloned, the files will be in a new folder (folders are directories) in your projects directory called ohapp. Go into the ohapp directory by typing
+You might want to see this [tutorial](https://github.com/DHRI-Curriculum/git) for more instructions on how to clone. Once you have cloned, the files will be in a new directory called ohapp, in your projects directory. Go into the ohapp directory by typing
 ```
 (venv) $ cd ohapp
 ```
-Now you are in the directory that contains the app. The next thing you need to do is install Flask. To do this, type
+Now you are in the directory that contains the app you just cloned. The next thing you need to do is install Flask. To do this, type
 ```
 (venv) $ pip install flask
 ```
@@ -130,7 +130,7 @@ To stop running the app, type **CTRL+C** on MacOS or **CTRL+Z** on Windows. **To
 
 # Adding Interviews
 
-To add the transcript of an interview to Ohapp, first click on "Add New Interview" at the bottom of the landing page. You will be redirected to the Add new interview form. 
+To add the transcript of an interview, first click on "Add New Interview" at the bottom of the landing page. You will be redirected to the Add new interview form. 
 
 ## Register the new interview
 
@@ -138,7 +138,7 @@ In the Add new interview form, enter the name of the interviewee, the email of t
 
 ## Add the transcript to the database
 
-Paste or type the transcript of your interview into the rather small box and click submit. You can paste up to 10,000 characters as many times as you like. The transcript will appear below the box as you add it. At the same time, it is being automatically saved in the app SQLite database.
+Paste or type the transcript of your interview into the rather small box and click submit. You can paste up to 10,000 characters as many times as you like. The transcript will appear below the box as you add it. At the same time, it is being automatically saved in the database.
 
 ## Add an abstract
 
