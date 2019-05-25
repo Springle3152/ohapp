@@ -113,7 +113,7 @@ Install the **fifth** extension which is for retrieving password-protected inter
 ```
 In Windows, run the app by typing
 ```
-(venv) > set FLASK_APP=hello
+(venv) > set FLASK_APP=ohapp
 (venv) > flask run
 ```
 You should see this:
