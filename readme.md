@@ -1,17 +1,17 @@
 # Oral History App
-Ohapp is an application for collecting oral histories. An interviewer is asked to create an account for each interview they will upload, giving this account an interviewee name, an email address and a password. An account is then created with a unique avatar. The interviewer, interviewee and anyone else who has the password can read and/or add an abstract and the transcript of an interview, which Ohapp stores in a database. The abstract and transcript are retrievable from the Find page and the database is searchable from the command line. In the future, Ohapp will also be able to house audio files and images associated with the interviews.
+Ohapp is an application for collecting oral histories. An interviewer is asked to create an account for each interview they will upload, giving this account an interviewee name, an email address and a password. An account is then created with a unique avatar. The interviewer, interviewee and anyone else who has the password can read and/or add an abstract and transcript of an interview, which Ohapp stores in a database. The abstract and transcript are retrievable from the Find page and the database is searchable from the command line. In the future, Ohapp will also be able to house audio files and images associated with the interviews.
 
 ## Instructions
-Ohapp is fairly easy to use. Once an interview has been transcribed, an interviewer can create or log in to an interview account and add a transcript by pasting or typing it into a form. The transcript is then stored in Ohapp's database.
+Ohapp is fairly easy to use. Once an interview has been transcribed, an interviewer can create or log in to an interview account and add a transcript by pasting or typing it into a form. 
 
 This page will show you how to
 
  - Install Ohapp on your local server
  - Create a new interview account and an interviewee profile with a brief abstract of the interview
  - Add transcripts of interviews to interviewee accounts
- - Read interviews and abstracts
- - Consult the database to get a list of all interviewees, abstracts and transcripts attributed to these 
- - Change names and other language on the front end of the app so as to make different versions for different projects.
+ - Read interviews, abstracts and transcripts
+ - Consult the database to get a list of all interviewees and transcripts 
+ - Change names and other language on the front end of the app so as to make different versions for different projects
 
 ## Getting Started
 Ohapp is coded with Python using the Flask framework. You will need to install Python and then, with Python, install Flask on your computer. You will also need to have Git installed so that you can clone Ohapp and download it onto your computer. 
@@ -26,7 +26,7 @@ Install Git. [Here](https://github.com/DHRI-Curriculum/git/blob/master/sections/
 
 ## Set up Flask
 
-First, go into your command line. On a Mac, go into the command line by typing "terminal" in Spotlight Search and hitting enter. In Windows, type "CMD" in the Windows search bar. Once you are in the command line, change directory into Desktop. 
+First, go into your command line. On a Mac, go into the command line by typing "terminal" in Spotlight Search and hitting enter. In Windows, type "CMD" in the Windows search bar. Once you are in the command line, change directory into Desktop by typing 
 ```
 $ cd Desktop/
 ```
@@ -35,7 +35,7 @@ Create a directory called "projects" (directories are folders; we will call them
 $ mkdir projects
 $ cd projects
 ```
-To see where you are, type "pwd" in MacOS. You should be in the projects directory.
+To see where you are, on a Mac or Linux type "pwd". You should be in the projects directory.
 ```
 $ pwd
 User/username/Desktop/projects
@@ -54,7 +54,7 @@ If you are using Windows, You might have to use Pip (Pip is a tool for installin
 > pip install virtualenv
 > virtualenv venv
 ```
-Activate the virtual environment. On a Mac, type
+Activate the virtual environment. In MacOS or Linux, type
 ```
 $ source venv\bin\activate
 ```
@@ -68,7 +68,7 @@ Clone the Ohapp repository from Github by clicking on the green Clone or Downloa
 ```
 (venv) $ git clone https://github.com/Springle3152/ohapp.git
 ```
-You might want to see this [tutorial](https://github.com/DHRI-Curriculum/git) for more instructions on how to clone. Once you have cloned, the files will be in a new directory called ohapp, in your projects directory. Go into the ohapp directory by typing
+You might want to see this [tutorial](https://github.com/DHRI-Curriculum/git/blob/master/sections/cloning.md) for more instructions on how to clone. Once you have cloned, the files will be in a new directory called ohapp, in your projects directory. Go into the ohapp directory by typing
 ```
 (venv) $ cd ohapp
 ```
@@ -98,7 +98,7 @@ Install the **third** extension to make the database work:
 ```
 (venv) $ pip install flask-sqlalchemy
 ```
-The **fourth** extension you need to install is a Flask wrapper for Alembic, a database migration framework for SQLAlchemy:
+The **fourth** extension you need to install is a Flask wrapper for Alembic, a database migration framework for SQLAlchemy. To install, type:
 ```
 (venv) $ pip install flask-migrate
 ```
@@ -106,10 +106,15 @@ Install the **fifth** extension which is for retrieving password-protected inter
 ```
 (venv) $ pip install flask-login
 ```
-**Now you have everything you need.** Run the app by typing
+**Now you have everything you need.** In MacOS or Linux, run the app by typing 
 ```
 (venv) $ export FLASK_APP=ohapp
 (venv) $ flask run
+```
+In Windows, run the app by typing
+```
+(venv) > set FLASK_APP=hello
+(venv) > flask run
 ```
 You should see this:
 ```
