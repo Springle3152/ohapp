@@ -28,7 +28,7 @@ Install Git. [Here](https://github.com/DHRI-Curriculum/git/blob/master/sections/
 
 First, go into your command line. On a Mac, go into the command line by typing "terminal" in Spotlight Search and hitting enter. In Windows, type "CMD" in the Windows search bar. Once you are in the command line, change directory into Desktop by typing 
 ```
-$ cd Desktop/
+$ cd Desktop
 ```
 Create a directory called "projects" (directories are folders; we will call them directories). Change directory into projects.
 ```
