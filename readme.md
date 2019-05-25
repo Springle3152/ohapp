@@ -201,7 +201,7 @@ If an error occurs on the production version of the application, you will want t
 
 ## Use of this app
 
-If you want to modify this app and use it for another project, you can change most of the language that users will see on the front end in the HTML files in ohapp/app/templates/(filename).html and also in ohapp/app/routes.py, ohapp/app/models.py, and ohapp/app/forms.py, as well as other modules. Just be careful what you change (only change words in quotation marks and not all of these can be changed) and keep track of what you change so that you can go back, as you will probably break the code a whole bunch of times. The text editor we used to develop this app is VS Code, which you can install from your Anaconda navigator. We recommend this text editor. To open a file in the text editor from the command line, type 
+If you want to modify this app and use it for another project, you can change most of the language that users will see on the front end in the HTML files in ohapp/app/templates/ and also in ohapp/app/routes.py, ohapp/app/models.py, and ohapp/app/forms.py, as well as other modules. Just be careful what you change (only change words in quotation marks and not all of these can be changed) and keep track of what you change so that you can go back, as you will probably break the code a whole bunch of times. The text editor we used to develop this app is VS Code, which you can install from your Anaconda navigator. We recommend this text editor. To open a file in the text editor from the command line, type 
 ```
 (venv) $ code <name of file>
 ```
