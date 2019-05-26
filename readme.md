@@ -45,7 +45,17 @@ To see where you are in Windows, type "cd"
 > cd
 User/username/Desktop/projects
 ```
-Now, create a virtual envirnoment by running the venv package
+Clone the Ohapp repository from Github by clicking on the green Clone or Download button at the top of this screen, copying the URL in the box, and typing 
+```
+$ git clone https://github.com/Springle3152/ohapp.git
+```
+You might want to see this [tutorial](https://github.com/DHRI-Curriculum/git/blob/master/sections/cloning.md) for more instructions on how to clone. Once you have cloned, the files will be in a new directory called ohapp, in your projects directory. Go into the ohapp directory by typing
+```
+$ cd ohapp
+```
+Now you are in the directory that contains the app you just cloned.
+
+Create a virtual envirnoment by running the venv package
 ```
 $ python3 -m venv venv
 ```
@@ -62,17 +72,7 @@ If you are using Windows, type
 ```
 > venv\Scripts\activate
 ```
-You will now see (venv) in front of the directory location in the command prompt. This is how you know you are in the virtual environment. 
-
-Clone the Ohapp repository from Github by clicking on the green Clone or Download button at the top of this screen, copying the URL in the box, and typing 
-```
-(venv) $ git clone https://github.com/Springle3152/ohapp.git
-```
-You might want to see this [tutorial](https://github.com/DHRI-Curriculum/git/blob/master/sections/cloning.md) for more instructions on how to clone. Once you have cloned, the files will be in a new directory called ohapp, in your projects directory. Go into the ohapp directory by typing
-```
-(venv) $ cd ohapp
-```
-Now you are in the directory that contains the app you just cloned. The next thing you need to do is install Flask. To do this, type
+You will now see (venv) in front of the directory location in the command prompt. This is how you know you are in the virtual environment. The next thing you need to do is install Flask. To do this, type
 ```
 (venv) $ pip install flask
 ```
