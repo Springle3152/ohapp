@@ -131,7 +131,7 @@ This means your enviroment is running and accessible through your local host. Le
 
 **Do not close the command prompt window, the app is running from there!**
 
-To stop running the app, type **CTRL+C** on MacOS or **CTRL+Z** on Windows. **To get out of your virtual environment, type **deactivate**. 
+To stop running the app, type **CTRL+C** on MacOS or **CTRL+Z** on Windows. To get out of your virtual environment, type **deactivate**. 
 
 # Adding Interviews
 
