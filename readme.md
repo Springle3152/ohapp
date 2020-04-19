@@ -1,8 +1,10 @@
 # Oral History App
 Ohapp is an application for collecting oral histories. An interviewer is asked to create an account for each interview they will upload, giving this account an interviewee name, an email address and a password. An account is then created with a unique avatar. The interviewer, interviewee and anyone else who has the password can read and/or add an abstract and transcript of an interview, which Ohapp stores in a database. The abstract and transcript are retrievable from the Read page and the database is searchable from the command line. In the future, Ohapp will also be able to house audio files and images associated with the interviews.
 
+Ohapp was built with Flask and is an adaptation of Miquel Grinberg's [microblog](https://github.com/miguelgrinberg/microblog) with a lot of help from his [Flask Mega Tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world). 
+
 ## Instructions
-Ohapp is fairly easy to use. Once an interview has been transcribed, an interviewer can create or log in to an interview account and add a transcript by pasting or typing it into a form. 
+Ohapp is fairly easy to use. Once an interview has been transcribed, an interviewer can create or log in to an interview account and add a transcript by pasting or typing it into a form.
 
 This page will show you how to
 
@@ -10,11 +12,11 @@ This page will show you how to
  - Create a new interview account and an interviewee profile with a brief abstract of the interview
  - Add transcripts of interviews to interviewee accounts
  - Read interviews, abstracts and transcripts
- - Consult the database to get a list of all interviewees and transcripts 
+ - Consult the database to get a list of all interviewees and transcripts
  - Change names and other language on the front end of the app so as to make different versions for different projects
 
 ## Getting Started
-Ohapp is coded with Python using the Flask framework. You will need to install Python and then, with Python, install Flask on your computer. You will also need to have Git installed so that you can clone Ohapp and download it onto your computer. 
+Ohapp is coded with Python using the Flask framework. You will need to install Python and then, with Python, install Flask on your computer. You will also need to have Git installed so that you can clone Ohapp and download it onto your computer.
 
 ## Install Python and Git
 
@@ -26,7 +28,7 @@ Install Git. [Here](https://github.com/DHRI-Curriculum/git/blob/master/sections/
 
 ## Set up Flask
 
-First, go into your command line. On a Mac, go into the command line by typing "terminal" in Spotlight Search and hitting enter. In Windows, type "CMD" in the Windows search bar. Once you are in the command line, change directory into Desktop by typing 
+First, go into your command line. On a Mac, go into the command line by typing "terminal" in Spotlight Search and hitting enter. In Windows, type "CMD" in the Windows search bar. Once you are in the command line, change directory into Desktop by typing
 ```
 $ cd Desktop
 ```
@@ -45,7 +47,7 @@ To see where you are in Windows, type "cd"
 > cd
 User/username/Desktop/projects
 ```
-Clone the Ohapp repository from Github by clicking on the green Clone or Download button at the top of this screen, copying the URL in the box, and typing 
+Clone the Ohapp repository from Github by clicking on the green Clone or Download button at the top of this screen, copying the URL in the box, and typing
 ```
 $ git clone https://github.com/Springle3152/ohapp.git
 ```
@@ -82,7 +84,7 @@ If you want to confirm that your virtual environment now has Flask installed, yo
 >>> import flask
 >>>
 ```
-If this statement does not give you any errors, Flask is installed and ready to be used. 
+If this statement does not give you any errors, Flask is installed and ready to be used.
 
 ## Extensions
 
@@ -106,7 +108,7 @@ Install the **fifth** extension which is for retrieving password-protected inter
 ```
 (venv) $ pip install flask-login
 ```
-**Now you have everything you need.** In MacOS or Linux, run the app by typing 
+**Now you have everything you need.** In MacOS or Linux, run the app by typing
 ```
 (venv) $ export FLASK_APP=ohapp
 (venv) $ flask run
@@ -131,11 +133,11 @@ This means your enviroment is running and accessible through your local host. Le
 
 **Do not close the command prompt window, the app is running from there!**
 
-To stop running the app, type **CTRL+C** on MacOS or **CTRL+Z** on Windows. **To get out of your virtual environment, type **deactivate**. 
+To stop running the app, type **CTRL+C** on MacOS or **CTRL+Z** on Windows. **To get out of your virtual environment, type **deactivate**.
 
 # Adding Interviews
 
-To add the transcript of an interview, first click on "Add New Interview" at the bottom of the landing page. You will be redirected to the Add new interview form. 
+To add the transcript of an interview, first click on "Add New Interview" at the bottom of the landing page. You will be redirected to the Add new interview form.
 
 ## Register the new interview
 
@@ -147,7 +149,7 @@ Paste or type the transcript of your interview into the rather small box and cli
 
 ## Add an abstract
 
-Click on the Read option at the top of the page. You will be redirected to the interview home page where you will see a unique avatar that has been generated for your interviewee. To add an abstract, click on edit profile. You will be redirected to a web form where you can type up to 3000 characters summarizing the story of your interviewee. Click on submit. Don't be surprised if it seems like nothing happened; you will not be redirected (we are working on adding a redirect to this page) but your abstract will be added to your interview Read page. 
+Click on the Read option at the top of the page. You will be redirected to the interview home page where you will see a unique avatar that has been generated for your interviewee. To add an abstract, click on edit profile. You will be redirected to a web form where you can type up to 3000 characters summarizing the story of your interviewee. Click on submit. Don't be surprised if it seems like nothing happened; you will not be redirected (we are working on adding a redirect to this page) but your abstract will be added to your interview Read page.
 
 ## Search for other interviews
 
@@ -169,13 +171,13 @@ To query the database, go into the ohapp directory in the command line, run Pyth
 1 Irma Ostroff
 2 Sal Kove
 ```
-Note that indents are important in the command line. In the above query the p in print has to be right below the u in user or the program won't do what you want. 
+Note that indents are important in the command line. In the above query the p in print has to be right below the u in user or the program won't do what you want.
 
 If you want to include the interviewees email addresses in the list, type the query as so:
 ```
 >>> for u in users:
 ...     print(u.id, u.username, u.email)
-... 
+...
 1 Irma Ostroff ostroff147@gmail.com
 2 Sal Kove salkove@salkove.com
 ```
@@ -191,9 +193,9 @@ If you want to retrieve interview transcripts from the Ohapp database through th
 >>> from app.models import User, Post
 >>> p = Post.query.all()
 >>> p
-[<Post I was born in Lithuania in 1952.>, <Post Thank you for the coffee (sound of coffee being poured). >, <Post Yes, I am comfortable, thank you. Unless you want to sit here? OK, I will stay here then. So. You say you want to know how I got where I am. Well, it is a long story. I will start at the beginning. I was born in Mott Haven in the Bronx on May first, 1948. My father was from West Virginia, and my mother was from Pennsylvania. We were poor but we got by until my father cut his foot at work (he was a builder) and the cut got infected, and it turned into gangrene. First, they cut his foot off, but the gangrene came back. Or maybe the doctors had not removed it all. It continued to spread, so they cut his whole leg off. >, <Post I came to the United States when I was five years old. My parents brought me here. They were running away from persecution in Lithuania. These were bad times for my family. When we came to New York we lived on the Lower East Side and things were much better. I remember that there was a Polish restaurant downstairs from where we lived, and I would sometimes do my homework there when my parents had not arrived home yet from work. There was a real community in our neighborhood. In some ways, we felt safe. In other ways not, because there was a lot of crime in this neighborhood back then. And in the seventies and eighties it got worse. I worked in a hardware store on Clinton and Rivington from 1970 to 1975, and we were robbed many times. We started keeping the door locked. When I was offered a job in a hardware store on 18th Street near Union Square I was happy to go. Union Square was very different back then. 
+[<Post I was born in Lithuania in 1952.>, <Post Thank you for the coffee (sound of coffee being poured). >, <Post Yes, I am comfortable, thank you. Unless you want to sit here? OK, I will stay here then. So. You say you want to know how I got where I am. Well, it is a long story. I will start at the beginning. I was born in Mott Haven in the Bronx on May first, 1948. My father was from West Virginia, and my mother was from Pennsylvania. We were poor but we got by until my father cut his foot at work (he was a builder) and the cut got infected, and it turned into gangrene. First, they cut his foot off, but the gangrene came back. Or maybe the doctors had not removed it all. It continued to spread, so they cut his whole leg off. >, <Post I came to the United States when I was five years old. My parents brought me here. They were running away from persecution in Lithuania. These were bad times for my family. When we came to New York we lived on the Lower East Side and things were much better. I remember that there was a Polish restaurant downstairs from where we lived, and I would sometimes do my homework there when my parents had not arrived home yet from work. There was a real community in our neighborhood. In some ways, we felt safe. In other ways not, because there was a lot of crime in this neighborhood back then. And in the seventies and eighties it got worse. I worked in a hardware store on Clinton and Rivington from 1970 to 1975, and we were robbed many times. We started keeping the door locked. When I was offered a job in a hardware store on 18th Street near Union Square I was happy to go. Union Square was very different back then.
 ```
-We are not sure at present how to retrieve all the transcripts of one interviewee (or all posts of one user) in the command line, but this is only because we have not had enough time to figure it out. The great thing is that all of the information you provided through the front end of the web app now resides in the app's database. 
+We are not sure at present how to retrieve all the transcripts of one interviewee (or all posts of one user) in the command line, but this is only because we have not had enough time to figure it out. The great thing is that all of the information you provided through the front end of the web app now resides in the app's database.
 
 ## Error handling:
 
@@ -201,13 +203,13 @@ If an error occurs on the production version of the application, you will want t
 
 ## Use of this app
 
-If you want to modify this app and use it for another project, you can change most of the language that users will see on the front end in the HTML files in ohapp/app/templates/ and also in ohapp/app/routes.py, ohapp/app/models.py, and ohapp/app/forms.py, as well as other modules. Just be careful what you change (only change words in quotation marks and not all of these can be changed) and keep track of what you change so that you can go back, as you will probably break the code a whole bunch of times. The text editor we used to develop this app is VS Code, which you can install from your Anaconda navigator. We recommend this text editor. To open a file in the text editor from the command line, type 
+If you want to modify this app and use it for another project, you can change most of the language that users will see on the front end in the HTML files in ohapp/app/templates/ and also in ohapp/app/routes.py, ohapp/app/models.py, and ohapp/app/forms.py, as well as other modules. Just be careful what you change (only change words in quotation marks and not all of these can be changed) and keep track of what you change so that you can go back, as you will probably break the code a whole bunch of times. The text editor we used to develop this app is VS Code, which you can install from your Anaconda navigator. We recommend this text editor. To open a file in the text editor from the command line, type
 ```
 (venv) $ code <name of file>
 ```
 ## License
 
-Ohapp is licensed under the GNU General Public License, a free, copyleft license for software and other kinds of works. 
+Ohapp is licensed under the GNU General Public License, a free, copyleft license for software and other kinds of works.
 
     This file is part of Ohapp.
 
@@ -223,5 +225,3 @@ Ohapp is licensed under the GNU General Public License, a free, copyleft license
 
     You should have received a copy of the GNU General Public License
     along with Ohapp.  If not, see <https://www.gnu.org/licenses/>.
-
-    
