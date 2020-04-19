@@ -1,7 +1,7 @@
 # Oral History App
 Ohapp is an application for collecting oral histories. An interviewer is asked to create an account for each interview they will upload, giving this account an interviewee name, an email address and a password. An account is then created with a unique avatar. The interviewer, interviewee and anyone else who has the password can read and/or add an abstract and transcript of an interview, which Ohapp stores in a database. The abstract and transcript are retrievable from the Read page and the database is searchable from the command line. In the future, Ohapp will also be able to house audio files and images associated with the interviews.
 
-Ohapp was built with Flask and is an adaptation of Miquel Grinberg's [microblog](https://github.com/miguelgrinberg/microblog) with a lot of help from his [Flask Mega Tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world). 
+Ohapp was built with Flask and is an adaptation of Miquel Grinberg's [microblog](https://github.com/miguelgrinberg/microblog) with a lot of help from his [Flask Mega Tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world).
 
 ## Instructions
 Ohapp is fairly easy to use. Once an interview has been transcribed, an interviewer can create or log in to an interview account and add a transcript by pasting or typing it into a form.
@@ -22,7 +22,7 @@ Ohapp is coded with Python using the Flask framework. You will need to install P
 
 Install Git. [Here](https://github.com/DHRI-Curriculum/git/blob/master/sections/gitconfig.md) are instructions on how to install Git.
 
-[Install Python 3](https://www.anaconda.com/distribution/#download-section) using Anaconda. Anaconda is hefty so this installation will take some time. We find that installing Anaconda is the best way to install Python.
+[Install Python 3 using Anaconda](https://www.anaconda.com/distribution/#download-section). Anaconda is hefty so this installation will take some time. We find that installing Anaconda is the best way to install Python.
 
 **Note: when installing Anaconda, check the advanced options box to select "Add Anaconda to my PATH environment variable."** You may not be able to do this if you are not an administrator of your computer, in which case you can set the environment variable [manually](https://medium.com/@GalarnykMichael/install-python-on-windows-anaconda-c63c7c3d1444).
 
@@ -136,7 +136,7 @@ This means your enviroment is running and accessible through your local host. Le
 <<<<<<< HEAD
 To stop running the app, type **CTRL+C** on MacOS or **CTRL+Z** on Windows. **To get out of your virtual environment, type **deactivate**.
 =======
-To stop running the app, type **CTRL+C** on MacOS or **CTRL+Z** on Windows. To get out of your virtual environment, type **deactivate**. 
+To stop running the app, type **CTRL+C** on MacOS or **CTRL+Z** on Windows. To get out of your virtual environment, type **deactivate**.
 >>>>>>> 778a07638c04667a02372600f59374676a7cd7b8
 
 # Adding Interviews
